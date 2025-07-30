@@ -1,0 +1,262 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  background: #fff8ef;
+  color: #333;
+}
+
+.impor-heading{
+  max-width: 1200px;
+  height: auto;
+  margin: auto;
+}
+/*.heading{
+      font-size:40px;
+      padding: 10px;
+      margin-top: -0.5px;
+      text-align: center;
+      color: white;
+      display: block;
+    }
+    hr{
+      width: 100%;
+      margin: 0 auto;
+      border: 3px solid gold;
+      display: block;
+    }*/
+.webinar-container {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: auto;
+  background: #fff;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+.left-section {
+  flex: 1;
+  min-width: 300px;
+  background: #fff0e0;
+  text-align: center;
+  padding: 30px;
+}
+.astro-image {
+  max-width: 100%;
+  border-radius: 10px;
+}
+.webinar-info {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin: 15px 0;
+  font-weight: bold;
+}
+.info-item {
+  background: #ffe6c0;
+  font-size: 23px;
+  padding: 10px 15px;
+  border-radius: 8px;
+}
+.rating {
+  margin-top: 20px;
+}
+.rating .stars {
+  font-size: 20px;
+  color: gold;
+}
+.right-section {
+  flex: 1;
+  min-width: 350px;
+  padding: 40px;
+}
+h1 {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+.orange {
+  color: darkorange;
+}
+.subheading {
+  color: #555;
+  font-size: 16px;
+  margin-bottom: 25px;
+}
+form label {
+  display: block;
+  margin-top: 15px;
+  font-weight: 600;
+}
+form input,
+form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+.note pre {
+  line-height: 1;
+  font-size: 14px;
+  color: red;
+  margin: 0;
+  padding: 0;
+  white-space: pre-wrap;
+}
+button {
+  margin-top: 20px;
+  padding: 12px;
+  width: 100%;
+  background: linear-gradient(to right, #ff9900, #ff5e00);
+  border: none;
+  color: white;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+button:hover {
+  background: linear-gradient(to right, #ff5e00, #ff9900);
+}
+
+/* Responsive Styles */
+@media (max-width: 1200px){
+  /*.heading {
+    margin-top: 0;
+    font-size: 2rem; /* Further adjust heading size */
+  }
+  hr{
+    width: 80%;
+  }
+
+  h1 {
+    font-size: 1.2rem; /* Further adjust heading size */
+  }
+
+  .subheading {
+    font-size: 0.8rem; /* Further adjust subheading size */
+  }
+
+  button {
+    font-size: 0.9rem; /* Adjust button font size */
+  }
+}
+@media (max-width: 720px) {
+  /*.impor-heading{
+    margin: 0 auto;
+    height: 110px;
+  }
+  .heading{
+    font-size: 38px;
+  }
+  .webinar-container {
+    flex-direction: column; /* Stack sections vertically */
+  }
+
+  .left-section, .right-section {
+    padding: 80px; /* Reduce padding on smaller screens */
+  }
+
+  h1 {
+    font-size: 1.5rem; /* Adjust heading size */
+  }
+
+  .subheading {
+    font-size: 0.9rem; /* Adjust subheading size */
+  }
+
+  .info-item {
+    font-size: 1rem; /* Adjust info item size */
+  }
+
+  .rating .stars {
+    font-size: 1.5rem; /* Adjust star size */
+  }
+}
+
+@media (max-width: 480px) {
+  /*.impor-heading{
+    width: 100%;
+    margin: 0 auto;
+    height: 79px;
+  }
+  .heading {
+    margin-top: 0;
+    font-size: 1.5rem; /* Further adjust heading size */
+  }
+
+  .left-section, .right-section {
+    padding: 30px; /* Reduce padding on smaller screens */
+  }
+
+  hr{
+    width: 100%;
+  }
+
+  h1 {
+    font-size: 1.2rem; /* Further adjust heading size */
+  }
+
+  .subheading {
+    font-size: 0.8rem; /* Further adjust subheading size */
+  }
+
+  .note  {
+  font-size: 16px;
+  color: red;
+}
+
+  button {
+    font-size: 0.9rem; /* Adjust button font size */
+  }
+}
+
+@media (max-width: 360px) {
+  /*.impor-heading{
+    width: 100%;
+    margin: 0 auto;
+    height: 79px;
+  }
+  .heading {
+    margin-top: 0;
+    font-size: 1.5rem; /* Further adjust heading size */
+  }
+
+  .left-section, .right-section {
+    padding: 2px; /* Reduce padding on smaller screens */
+  }
+
+  hr{
+    width: 100%;
+  }
+
+  h1 {
+    font-size: 1.2rem; /* Further adjust heading size */
+  }
+  .right-section  h4{
+    padding-left: 10px;
+    padding-right: 0px;
+  }
+
+  .right-section h1 {
+    padding-left: 10px;
+  }
+
+  .subheading {
+    font-size: 1rem; /* Further adjust subheading size */
+    padding-left: 10px;
+  }
+
+  .note  {
+  font-size: 16px;
+  color: red;
+}
+
+#registrationForm{
+  /*padding: 30px;*/
+  padding-right: 40px;
+  padding-left: 20px;
+  margin: 0 auto;
+}
+  button {
+    font-size: 0.9rem; /* Adjust button font size */
+  }
+}

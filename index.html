@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Astro Webinar Registration</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="impor-heading">
+    <img style="max-width: 100%; height: auto; display: block; margin: 0 auto;" src="Banner_Form Page.png">
+<!--<h1 class="heading">APNI KUNDLI, APNA SAMADHAN – DIVYA JYOTISH DARBAR<hr></h1>-->
+</div>
+<div class="webinar-container">
+  <div class="left-section">
+    <video id="astroVideo" autoplay muted loop playsinline style="width: 100%; max-width: 700px;">
+      <source src="Praveen ji.mp4" type="video/mp4">
+    </video>
+    <div class="webinar-info">
+      <div class="info-item"><span>📅</span> Fir 01 Aug 2025</div>
+      <div class="info-item"><span>🕕</span> 8:00 PM</div>
+    </div>
+    <div class="rating">
+      <div class="stars">⭐️⭐️⭐️⭐️⭐️</div>
+      <p>8.5k+ Reviews (4.9/5)</p>
+    </div>
+  </div>
+
+  <div class="right-section">
+    <!--<h1 class="heading">Apni Kundli, Apna Samadhan – Divya Jyotish Darbar</h1>-->
+    <h1><span class="orange">Jyotish Guru Parveen Ji Live Workshop</span></h1>
+      <h4>Are you also facing unseen obstacles from the planets in your life?</h4>
+    <p class="subheading">Now know the real secret of your Kundli in this free webinar!
+Register and get accurate and simple solution in just 1 hour.</p>
+
+    <form id="registrationForm">
+      <label>Full Name*</label>
+      <input type="text" name="name" required>
+
+      <label>Date of Birth</label>
+      <input type="date" name="dob">
+
+      <!--<label>Birth Time*</label>
+      <input type="time" name="birthTime" required>-->
+      <label for="birthTime">Birth Time</label>
+      <input type="time" id="birthTime" name="birthTime" step="1" placeholder="hh:mm:ss AM/PM">
+
+
+
+      <label>Birth Place</label>
+      <input type="text" name="birthPlace">
+
+      <label>Mobile Number*</label>
+      <input type="tel" name="mobile" required>
+
+      <label>Email ID</label>
+      <input type="email" name="email">
+
+      <label>Any specific question/problem you would like to ask in the webinar?</label>
+      <textarea name="question" rows="3" placeholder="अपना प्रश्न यहाँ लिखें..."></textarea>
+      <h1 class="note">
+            📌 नोट:
+          <br>Zoom Webinar की लिंक केवल हमारे WhatsApp चैनल पर ही साझा की जाएगी।
+          इसलिए रजिस्ट्रेशन बटन पर क्लिक करने के बाद WhatsApp चैनल को फॉलो करना
+          अनिवार्य है। अन्यथा आपको वेबिनार में शामिल होने की लिंक नहीं मिल पाएगी।
+          कृपया जल्द से जल्द चैनल को फॉलो करें और अपडेट्स पर नज़र बनाए रखें।
+      </h1>
+
+      <button type="submit">Register Now For Free</button>
+    </form>
+  </div>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
