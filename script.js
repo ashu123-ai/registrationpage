@@ -50,7 +50,7 @@ document.addEventListener('DOMContentLoaded', function () {
     };
 
     // WhatsApp redirect
-    window.location.href = 'https://whatsapp.com/channel/0029VbBaNYq1iUxYyMleuF20';
+    window.location.href = 'https://chat.whatsapp.com/I6eyozWDH66KppJJZnKXup?mode=ac_t';
 
     // Send data to Google Sheet
     const scriptURL = 'https://script.google.com/macros/s/AKfycbziaE5vCb370pahjyVlIKH1pF5k-gdho5n2FUOd5XIKqdiyyE_7Pwrpc3FME3wGtzxn5g/exec';
